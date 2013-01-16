@@ -1,0 +1,39 @@
+/*
+Theme Name:     7dc
+Theme URI:      http://github.com/chrisgoudet/wp-theme-7dc/
+Description:    The theme I used on my blog, chrisgoudet.com. Child theme of the Twenty Twelve theme 
+Author:         Chris Goudet
+Author URI:     http://chrisgoudet.com/about/
+Template:       twentytwelve
+Version:        1.0
+*/
+
+@import url("../twentytwelve/style.css");
+
+/* Default font size is too big */
+p {
+	font-size: 90%
+}
+
+/* Position the header image to the left of the site's title & description */
+.site-header {
+  position: relative;
+}
+.header-image {
+  width: 100px;
+}
+hgroup {
+  position: absolute;
+  top: 60px;
+  left: 115px;
+}
+
+/* Cheer up default links color */
+a {
+  color: #09c;
+}
+
+/* Center footer text */
+footer[role="contentinfo"] {
+  text-align: center;
+}
