@@ -1,7 +1,7 @@
 /*
 Theme Name:     7dc
 Theme URI:      http://github.com/chrisgoudet/wp-theme-7dc/
-Description:    The theme I used on my blog, chrisgoudet.com. Child theme of the Twenty Twelve theme 
+Description:    The theme I used on my blog, chrisgoudet.com. Child theme of the Twenty Twelve theme
 Author:         Chris Goudet
 Author URI:     http://chrisgoudet.com/about/
 Template:       twentytwelve
@@ -11,21 +11,53 @@ Version:        1.0
 @import url("../twentytwelve/style.css");
 
 /* Default font size is too big */
-p {
+p,ul {
 	font-size: 90%
+}
+@font-face {
+    font-family: 'cmc7regular';
+    src: url('fonts/cmc7-webfont.eot');
+    src: url('fonts/cmc7-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cmc7-webfont.woff') format('woff'),
+         url('fonts/cmc7-webfont.ttf') format('truetype'),
+         url('fonts/cmc7-webfont.svg#cmc7regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 /* Position the header image to the left of the site's title & description */
 .site-header {
   position: relative;
 }
+.site-header h1,
+.site-header h2 {
+  font-family: 'cmc7regular';
+  font-size: 16pt;
+  font-weight: normal;
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); 
+}
 .header-image {
   width: 100px;
+  vertical-align: middle;
 }
 hgroup {
+  display: inline-block;
+  margin-left: 1em;
+  margin: 24px 0 0 1em;
+  vertical-align: middle;
+  /*position: absolute;*/
+  /*top: 65px;*/
+  /*left: 115px;*/
+}
+.rss-feed-link {
   position: absolute;
-  top: 60px;
-  left: 115px;
+  right: 0px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 10pt;
+  margin-top: 10px;
 }
 
 /* Cheer up default links color */
@@ -37,3 +69,48 @@ a {
 footer[role="contentinfo"] {
   text-align: center;
 }
+
+@media screen and (min-width: 600px) {
+  .site {
+    max-width: 800px;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url("fonts/fontello.eot?21894367");
+  src: url("fonts/fontello.eot?21894367#iefix") format('embedded-opentype'), url("fonts/fontello.woff?21894367") format('woff'), url("fonts/fontello.ttf?21894367") format('truetype'), url("fonts/fontello.svg?21894367#fontello") format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  /*width: 1em;*/
+  width: 24px;
+  margin-right: 0.2em;
+  text-align: center;
+/* opacity .8 */
+/* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+/* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+/* Animation center compensation - magrins should be symmetric */
+/* remove if not needed */
+ /*margin-left: 0.2em;*/
+  margin: 0 auto 0 auto;
+  position: relative;
+/* you can be more comfortable with increased icons size */
+  font-size: 120%; 
+/* Uncomment for 3D effect */
+ text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); 
+}
+.icon-rss:before { content: '\52'; } /* 'R' */
+.icon-twitter:before { content: '\54'; } /* 'T' */
+.icon-gplus:before { content: '\47'; } /* 'G' */
