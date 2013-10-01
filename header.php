@@ -36,9 +36,9 @@
 
 		<hgroup>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-      <a href="https://twitter.com/chrisgoudet" title="Follow me on Twitter" target="_blank"><i class="icon-twitter"></i></a>
+      <a href="https://twitter.com/laurentgoudet" title="Follow me on Twitter" target="_blank"><i class="icon-twitter"></i></a>
       <a href="#" title="G+ profile (not yet)"><i class="icon-gplus" target="_blank"></i><span class="screen-reader-text">Google Plus</span></a>
-      <a href="http://chrisgoudet.com/feed" title="RSS is not dead yet!" target="_blank"><i class="icon-rss"></i></a>
+      <a href="http://laurentgoudet.com/feed" title="RSS is not dead yet!" target="_blank"><i class="icon-rss"></i></a>
     </hgroup>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
